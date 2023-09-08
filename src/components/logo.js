@@ -20,6 +20,7 @@ class LogoBig extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="index.css">
             <center><img class="big-logo" src="img/tumblr logo a.png"></center>
         `;
     }
