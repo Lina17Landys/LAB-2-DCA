@@ -1,7 +1,7 @@
 class LogoBig extends HTMLElement {
 
     static get observedAttributes() {
-        return ["img-src-tumblr-logo"];
+        return ["img/tumblr logo a.png"];
     }
 
     constructor() {
@@ -20,9 +20,7 @@ class LogoBig extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
-            <link rel="stylesheet" href="index.css">
-            <center> <img src="${this['img-src-tumblr-logo']}"</center>
-
+            <center><img class="big-logo" src="img/tumblr logo a.png"></center>
         `;
     }
 }
