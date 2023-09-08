@@ -14,12 +14,17 @@ p {
     background: none;
     z-index: 0;
     position: absolute;
-    top: 5;
-    left: 0;
+    top: 1.5px;
+    left: 20;
 }
 
+.box > i.fa-search {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+}
 .searchBar {
     height: 40px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,45 +32,38 @@ p {
     position: absolute;
     top: 10px;
     left: 80px;
-    color: #ffff;
+    right: 20px; 
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
 
-}
-
-.hidden {
-    display: none;
 }
 
 .box {
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: none; 
     border-radius: 10px;
     display: flex;
-    align-items: center; 
-    padding: 20px;
-    color: #ffff;
+    align-items: center;
+    padding: 10px;
 
 }
 
 .box>input {
-    height: 10px;
+    flex: 1;
     border: none;
     outline: none;
     font-size: 18px;
-    margin-left: 10px; 
-    color: #ffff;
+    margin-left: 10px;
+    background: transparent;
 
 }
 
 .box>i {
-    margin-right: 10px; 
     color: #ffff;
 }
 
-#searchBar {
-    background-color: transparent;
-    color: #ffff;
-
+#searchBar::placeholder {
+    color: white;
 }
 
 .boton {
@@ -97,6 +95,8 @@ p {
     align-items: flex-start;
     margin-top: 40px;
     margin-bottom: 10px;
+    background-color: white;
+
 }
 
 .input {
@@ -107,10 +107,15 @@ p {
     align-items: flex-start;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: white;
+}
+
+.input-e::placeholder,
+.input::placeholder {
+    color: black; 
 }
 
 input {
-    background-color: #ffff;
     border-radius: 5px;
     color: rgb(133, 133, 133);
     border: none;
